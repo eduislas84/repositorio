@@ -87,3 +87,22 @@ CREATE TABLE contactos (
 |13|Status Code|404 Not Found|
 |14|Responsable Type|aplicacion/Json|
 |15|Response|{"error":"Recurso no encontrado"}|
+
+## 3.4 Tabla: DELETE
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Descripcion|Endpoint para eliminar un recurso en la API|
+|2|Summary|Endpoint para eliminar un recurso|
+|3|Method|DELETE|
+|4|Endpoint|http://localhost:8000/contactos{id}|
+|5|QuerryParam|NA|
+|6|PathParam|{id}Identificador de recursos que se va a eliminar|
+|7|Data|NA|
+|8|Version|V1|
+|9|Status Code|204 No|
+|10|Response Type|NA|
+|11|Response|NA|
+|12|curl|curl-X'DELETE''http://localhost:8000/contactos{id}'-H'accept:aplication/Json'|
+|13|Status Code|404 Not Found|
+|14|Responsable Type|aplicacion/Json|
+|15|Response|{"error":"Recurso no encontrado"}|
