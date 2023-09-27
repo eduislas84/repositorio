@@ -49,3 +49,21 @@ CREATE TABLE contactos (
 |14|Responsable Type|NA|
 |15|Response|NA|
 
+## 3.4 Tabla: PAST
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Descripcion|Endpoint para enviar datos a la API|
+|2|Summary|Endpoint para enviar datos|
+|3|Method|POST|
+|4|Endpoint|http://localhost:8000/|
+|5|QuerryParam|NA|
+|6|PathParam|NA|
+|7|Data|Datos que se enviaron al servidor en el cuerpo de la solicitud|
+|8|Version|V1|
+|9|Status Code|201 Created|
+|10|Response Type|aplicacion/Json|
+|11|Response|{"Version":"V1":"message":"Datos recibidos correctamente":"datatime":"27/09/23:17:21"}|
+|12|curl|curl-X'PAST''http://localhost:8000/'-H'accept:aplication/Json'-d'{"data":"ejemplo"}'|
+|13|Status Code|400 Bad Request|
+|14|Responsable Type|aplicacion/Json|
+|15|Response|{"error":"Mensaje de error detallado"}|
