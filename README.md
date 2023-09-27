@@ -29,3 +29,23 @@ CREATE TABLE contactos (
     email VARCHAR(50) NOT NULL,
     telefono VARCHAR(13) NOT NULL
 );
+
+## 3.3 Tabla: GET
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Descripcion|Endpoint raiz de la API|
+|2|Summary|Endpoint raiz|
+|3|Method|GET|
+|4|Endpoint|http://localhost:8000/|
+|5|QuerryParam|NA|
+|6|PathParam|NA|
+|7|Data|NA|
+|8|Version|V1|
+|9|Status Code|200 ok|
+|10|Response Type|aplicacion/Json|
+|11|Response||
+|12|curl|curl<'Get''http://localhost:8000/'-H'accept:aplication/Json'|
+|13|Status Code|NA|
+|14|Responsable Type|NA|
+|15|Response|NA|
+
