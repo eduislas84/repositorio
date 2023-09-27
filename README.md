@@ -69,7 +69,7 @@ CREATE TABLE contactos (
 |15|Response|{"error":"Mensaje de error detallado"}|
 
 
-## 3.4 Tabla: PATCH
+## 3.5 Tabla: PATCH
 |No.|Propiedad|Detalle|
 |--|--|--|
 |1|Descripcion|Endpoint para realizar modificaciones parciales en un recurso de API|
@@ -88,7 +88,7 @@ CREATE TABLE contactos (
 |14|Responsable Type|aplicacion/Json|
 |15|Response|{"error":"Recurso no encontrado"}|
 
-## 3.4 Tabla: DELETE
+## 3.6 Tabla: DELETE
 |No.|Propiedad|Detalle|
 |--|--|--|
 |1|Descripcion|Endpoint para eliminar un recurso en la API|
@@ -103,6 +103,25 @@ CREATE TABLE contactos (
 |10|Response Type|NA|
 |11|Response|NA|
 |12|curl|curl-X'DELETE''http://localhost:8000/contactos{id}'-H'accept:aplication/Json'|
+|13|Status Code|404 Not Found|
+|14|Responsable Type|aplicacion/Json|
+|15|Response|{"error":"Recurso no encontrado"}|
+
+## 3.5 Tabla: PUT
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Descripcion|Endpoint para actualizar recursos en la API|
+|2|Summary|Endpoint para actualizar datos|
+|3|Method|PUT|
+|4|Endpoint|http://localhost:8000/contactos{id}|
+|5|QuerryParam|NA|
+|6|PathParam|{id}Identificador de lo que se va actualizar|
+|7|Data|Datos actualizados que se enviaron al servidor en el cuerpo de la solicitud|
+|8|Version|V1|
+|9|Status Code|200 ok|
+|10|Response Type|aplicacion/Json|
+|11|Response|{"Version":"V1":"message":"Recursos Actualizados Correctamente":"datatime":"27/09/23:17:42"}|
+|12|curl|curl-X'PUT''http://localhost:8000/contactos{id}'-H'accept:aplication/Json'-d'{"data":"nuevo_valor"}'|
 |13|Status Code|404 Not Found|
 |14|Responsable Type|aplicacion/Json|
 |15|Response|{"error":"Recurso no encontrado"}|
