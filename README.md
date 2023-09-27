@@ -67,3 +67,23 @@ CREATE TABLE contactos (
 |13|Status Code|400 Bad Request|
 |14|Responsable Type|aplicacion/Json|
 |15|Response|{"error":"Mensaje de error detallado"}|
+
+
+## 3.4 Tabla: PATCH
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Descripcion|Endpoint para realizar modificaciones parciales en un recurso de API|
+|2|Summary|Endpoint para modificar datos de forma parcial|
+|3|Method|PATCH|
+|4|Endpoint|http://localhost:8000/contactos{id}|
+|5|QuerryParam|NA|
+|6|PathParam|{id}Identificador de recursos que se va modificando parcialmente|
+|7|Data|Datos que parcialnmente se enviaron al servidor en el cuerpo de la solicitud para realizar la modificacion|
+|8|Version|V1|
+|9|Status Code|200 ok|
+|10|Response Type|aplicacion/Json|
+|11|Response|{"Version":"V1":"message":"Recursos Modificados Parcialmente":"datatime":"27/09/23:17:31"}|
+|12|curl|curl-X'PATCH''http://localhost:8000/contactos{id}'-H'accept:aplication/Json'-d'{"data_patch":"nuevo_valor"}'|
+|13|Status Code|404 Not Found|
+|14|Responsable Type|aplicacion/Json|
+|15|Response|{"error":"Recurso no encontrado"}|
